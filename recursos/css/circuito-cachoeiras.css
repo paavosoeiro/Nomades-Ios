@@ -1,0 +1,43 @@
+/* 
+    Document   : circuito-praias
+    Created on : 07/10/2011, 20:35:26
+    Author     : liviacorreia
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+#excerpt h3, .current{
+    background: #092109;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+table, td{
+    border: 1px solid black;
+    text-align: center;
+}
+
+table td{
+    padding: 3px;
+}
+
+table tr th{
+    font-size: 14px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+table tr{
+    width: 100%;
+}
+
+

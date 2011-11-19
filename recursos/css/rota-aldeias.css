@@ -1,0 +1,22 @@
+/* 
+    Document   : rota-aldeias
+    Created on : 12/10/2011, 16:51:09
+    Author     : liviacorreia
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+#excerpt h3, .current{
+    background: #4a1310;
+}
+
+#excerpt p#texto1, p#texto3{
+    text-align: justify;
+    font-size: 14px;
+}
+

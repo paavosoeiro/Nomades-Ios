@@ -1,0 +1,104 @@
+/* 
+    Document   : conteudo
+    Created on : 06/10/2011, 17:58:42
+    Author     : liviacorreia
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+#conteudo_links{
+    width: 880px;
+    margin-right: 60px;
+    position: relative;
+    padding: 5px;
+    text-align: right;
+}
+
+#conteudo_links a{
+    font-size: 18px;
+    color: #000;
+    padding: 2px;
+}
+
+.negrito{
+    font-weight: bold;
+}
+
+#conteudo_links ul{
+    list-style: none;
+}
+
+#conteudo_links ul li{
+    margin-top: 1px;
+    height: 80px;
+    background: #dddddd;
+    text-align: center;
+    line-height: 80px;
+}
+
+.conteudo_fotos h2{
+    color: #701f19;
+    padding: 2px;
+    font-variant: small-caps;
+}
+
+#info{
+    display: none;
+    padding: 25px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.informacoes-importantes{
+    margin-left: 450px;
+    min-height: 280px;
+
+}
+
+.informacoes-tecnicas{
+    border-right: 1px solid black;
+    padding-right: 5px;
+    float: left;
+    width: 425px;
+    min-height: 280px;
+}
+
+#info_fotos{
+    width: 880px;
+    min-height: 330px;
+    display: none;
+    background: #000;
+    opacity: 0.7;
+}
+
+#info_fotos ul li{
+    float: left;
+    position: relative;
+    background: #fff;
+    padding: 5px;
+    margin: 15px;
+    list-style: none;
+    opacity: 0.7;
+}
+
+#info_fotos ul li p{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    text-align: center;
+}
+
+#info_fotos img{
+    width: 100px;
+    height: 100px;
+}
+
+.escondido{
+    display: none;
+}
+

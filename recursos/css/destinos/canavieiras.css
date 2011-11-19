@@ -1,0 +1,17 @@
+/* 
+    Document   : canavieiras
+    Created on : 23/10/2011, 12:05:39
+    Author     : regimar
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+#excerpt h3, .current{
+    background: chocolate;
+}
+

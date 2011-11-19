@@ -1,0 +1,57 @@
+/* 
+    Document   : by-night
+    Created on : 22/10/2011, 21:14:42
+    Author     : regimar
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+
+#texto{
+    margin: 20px 0 0 10px;
+    text-align: left;
+    padding: 0;
+    float: left;
+    width: 300px;
+    display: block;
+}
+
+#texto p{
+    font-size: 16px;
+}
+
+#foto{
+    margin: 10px 0 0 0;
+    padding: 0;
+}
+
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+table, td{
+    border: 1px solid black;
+    text-align: center;
+}
+
+table td{
+    padding: 3px;
+}
+
+table tr th{
+    font-size: 14px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+table tr{
+    width: 100%;
+}

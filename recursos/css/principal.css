@@ -1,0 +1,265 @@
+/* 
+    Document   : principal
+    Created on : 17/09/2011, 10:53:28
+    Author     : Paavo Soeiro
+    Co-author  : Wallace Veridiano
+    Description:
+        Documento de estilo principal do site Nomades Ios
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%; 
+    height:100%; 
+    background: url('../imagens/bgs/folha_fundo_t.jpg') center center fixed no-repeat;
+    background-size:cover; 
+    text-align:center; 
+    overflow:auto;
+
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+#tudo{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#cima{
+    position: relative;
+    /*    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cccccc', endColorstr='#000000');
+        background: -moz-linear-gradient(top, #2A5C0B 10%, white);
+        background: -webkit-gradient(linear, left top, left bottom, from(#2A5C0B), to(white));*/
+    padding-top: 2px;
+    margin: 0 10px 0 10px;
+    -webkit-border-radius: 5px;
+}
+
+#topo_todo{
+    margin: 10px;
+}
+
+#logo{
+    width: 350px;
+    height: 161px;
+    float: left;
+}
+
+#fotos_topo{
+    float: left;
+    margin-left: 0;
+}
+
+#fotos_topo pics { display: none; }
+#fotos_topo pics img {
+    height: 200px; 
+    width: 650px; 
+    overflow:hidden; 
+}
+
+#box_clima_tempo{
+    float: left;
+    margin-left: 0;
+    margin-top: 15px;
+    text-align: center;
+}
+
+#box_utilidades{
+    position: relative;
+}
+
+#box_utilidades_direita{
+    float: right;
+}
+
+#box_utilidades_direita a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color:#701f19;
+
+}
+#box_utilidades_direita_links{
+    position: absolute;
+    top: 0;
+    left: 200px;
+
+}
+
+#menu{
+    width: 100%;
+    height: 60px;
+    z-index: 2;
+    position:relative;
+    margin: 0 auto;
+}
+
+#menu_corpo
+{
+    padding:0px;
+    margin:5px;
+    float: left;
+    width: 100%;
+    font:100%;
+}
+
+#menu_corpo li
+{	
+    float: left;
+    list-style: none;
+}
+
+#menu_corpo li a
+{
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 5px;
+    height: 20px;
+    line-height:20px;
+    font-size: 14px;
+    /*    font-size: 100%;*/
+    display: block;
+
+    background: #fefefe;
+
+    padding: 5px 5px;
+    text-decoration: none;
+    min-width: 130px;
+    position: relative;
+    /*    width: 130px;*/
+    color: #701f19;
+    white-space: nowrap;
+
+    border-bottom: 2px solid #fff;
+    /*    -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;*/
+    font-weight: bold;
+    font-variant:small-caps;
+}
+
+#menu_corpo li a:hover
+{	
+    /*background-color:#D6D6D6;
+    color: #6D6D6D;
+    border-bottom:3px solid #EA0000;*/
+}
+
+.sub_menu{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    visibility: hidden;
+}
+
+#menu_corpo li ul li
+{	
+    float: none;
+    display: inline}
+
+#menu_corpo li ul li a{
+    margin: 0 0 0 5px;
+    min-width: 180px;
+    text-align: left;
+    z-index: 1000;    
+    border: none;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+
+#menu_corpo li ul li a:hover
+{	
+    background: #D6D6D6
+}
+
+.sub_sub_menu{
+    position: absolute;
+    top:0;
+    left: 150px;
+    visibility: hidden;
+}
+
+#conteudo_todo{
+    margin: 0 auto;
+
+}
+
+#conteudo_todo_contentBoxBg{
+    /*    background-image: url( '../imagens/bgs/teste_fundo.jpg');*/
+    /*    background-repeat: no-repeat;*/
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d6ebb7', endColorstr='#fdfdfd');
+    background: -moz-linear-gradient(top, #d6ebb7 10%, #fdfdfd);
+    background: -webkit-gradient(linear, left top, left bottom, from(#d6ebb7), to(#fdfdfd));
+    /*    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#cfcfcf));*/
+    /*    background:-webkit-gradient (radial, -45deg, from(black), color-stop(0.5, transparent), to(white));  */
+    /*        background-color: #d6ebb7;*/
+    /*    opacity: 0.8;*/
+    /*    background-color: black;*/
+}
+
+
+
+#conteudo{
+    color: #000;
+    margin: 10px 0 10px 10px;
+    float: left;
+    padding: 0 5px 5px 5px;
+    width: 900px;
+    min-height: 365px;
+}
+
+#conteudo h2{
+    color: #701f19;
+    font-size: 24px;
+}
+
+#conteudo h3{
+    font-size: 16px;
+}
+
+#conteudo p{
+    color:black;
+    /*    font-size: 18px;*/
+}
+
+#links{
+    margin: 40px 0 0 0;
+    padding: 5px;
+    float: left;
+    height: 320px;
+    width: 200px;
+    -webkit-border-radius: 5px;
+    border:  #435c3f solid 1px;
+}
+
+#links img{
+    border: none;
+}
+
+#publicidade{
+    position: relative;
+    margin: 0 15px;
+    border-top: black groove 1px;
+}
+
+#rodape{
+    color:white;
+    padding: 0 5px 0 5px;
+    margin: 0 10px 0 20px;
+    font-size: 12px;
+}
+
+#rodape span{
+    margin-right: 20px;
+    float: right;
+}

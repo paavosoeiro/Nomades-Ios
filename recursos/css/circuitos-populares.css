@@ -1,0 +1,17 @@
+/* 
+    Document   : circuitos-populares
+    Created on : 22/10/2011, 18:33:50
+    Author     : regimar
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+#excerpt h3, .current{
+    background: #092109;
+}
+

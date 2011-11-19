@@ -1,0 +1,154 @@
+/* 
+    Document   : slider_conteudo
+    Created on : 02/10/2011, 12:12:33
+    Author     : liviacorreia
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+#slider{
+    position: relative;
+    width: 880px; /* 880 */
+    height: 330px;
+    overflow: hidden;
+}
+
+#mask-gallery{
+    overflow: hidden;
+}
+
+#gallery{
+    list-style: none;
+    margin:0;
+    padding:0;
+    z-index:0;
+    /* width = total items multiply with #mask gallery width */
+    /*    width:1780px;*/
+    width:880px;
+    overflow:hidden;
+}
+
+#gallery li{
+    float: left;
+}
+
+#gallery img{
+    width: 880px;
+    height: 330px;
+}
+
+#mask-excerpt{
+    position: absolute;
+     top: 0;
+    left: 25px;
+    /*    z-index: 500;*/
+    width: 280px;
+    overflow:hidden;
+}
+
+#excerpt{
+    /* Opacity setting for different browsers */
+    filter:alpha(opacity=75);
+    -moz-opacity:0.75;  
+    -khtml-opacity: 0.75;
+    opacity: 0.75;  
+
+    /* Clear the list style */
+    list-style:none;
+    margin:0;
+    padding:0;
+
+    /* Set the position */
+    /*        z-index:10;*/
+    position:absolute;
+    top:0;
+    left:0;
+
+    /* Set the style */
+    width:280px;
+    background-color:#fff;
+    overflow:hidden;
+    /*    font-family:arial;*/
+    /*    font-size:16px;*/
+    /*    color:#000; */
+}
+
+/*.conteudo_informativos{
+    position: absolute;
+    bottom: 5px;
+    left: 30px;
+    overflow: hidden;
+
+} */
+
+/*.conteudo_informativos p{
+    text-decoration: none;
+    margin: 2px;
+    background: #ffe45c;
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    float: left;
+}*/
+
+.current{
+/*    display: block;*/
+/*    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;*/
+    background: navy;
+    color: #ffffff;
+}
+
+.pager{
+    margin: 1px;
+    position: relative;
+    float: left;
+    width: 125px;
+    display: block;
+}
+
+/*.conteudo_informativos a,*/
+.pager a{
+    float: left;
+    margin: 0;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    text-decoration: none;
+    display: block;
+/*    color: #000;*/
+}
+
+#excerpt p{
+    text-align: justify;
+    /*    font-weight: bold;*/
+/*    font-family: Tahoma, Geneva, sans-serif;*/
+    font-size:16px;
+    color:#000; 
+    margin: 5px;
+}
+
+#excerpt h3{
+/*    margin: 3px;*/
+    font-size: 22px;
+    text-align: center;
+    background: navy;
+    height: 50px;
+    line-height: 50px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin: 8px;
+    color: #fff;
+}
+
+

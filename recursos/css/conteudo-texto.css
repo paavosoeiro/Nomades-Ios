@@ -1,0 +1,53 @@
+
+
+/* 
+    Document   : interv-sociais
+    Created on : 23/10/2011, 22:31:11
+    Author     : regimar
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+
+//USADO EM HOME.HTML E INTERV-SOCIAIS.HTML
+*/
+
+*{
+    margin:0 auto;
+    padding:0;
+    color: #000000;
+    
+}
+
+#texto-home{
+    text-align: justify;
+    margin: 0 50px 0 50px;
+}
+
+#nomades-home{
+    text-align: center;
+}
+
+#citacao-home{
+    text-align: right;
+    margin-right: 60px;
+}
+
+#texto{
+    text-align: justify; 
+    margin-left: 20px;
+    margin-right: 60px;
+}
+
+#texto h3{
+    color: #701f19;
+    text-align: center;
+}
+
+#separador{
+    text-align: center;
+    border-top: black double medium;
+}

@@ -1,0 +1,33 @@
+/* 
+    Document   : ilha-do-desejo
+    Created on : 23/10/2011, 02:17:50
+    Author     : regimar
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+
+
+#texto{
+    margin: 20px 0 0 10px;
+    text-align: left;
+    padding: 0;
+    float: left;
+    width: 300px;
+    display: block;
+}
+
+#texto p{
+    font-size: 16px;
+}
+
+#foto{
+    margin: 10px 0 0 0;
+    padding: 0;
+    
+}
