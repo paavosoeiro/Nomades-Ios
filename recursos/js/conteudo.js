@@ -7,10 +7,10 @@ jQuery(function(){
             jQuery(box).addClass('temp').show('normal', function(){
                 if(box=='#slider') {
                     jQuery('#slider_link').hide();
-                    jQuery('.pager').show();
+                    jQuery('.pager, .texto').show();
                 }
                 else {
-                    jQuery('.pager').hide();
+                    jQuery('.pager, .texto').hide();
                     jQuery('#slider_link').show();
                 }
                 jQuery('#info_fotos a').lightBox();

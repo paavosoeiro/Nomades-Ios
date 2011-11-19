@@ -68,6 +68,19 @@ jQuery(document).ready(function() {
         jQuery('#mask-excerpt').scrollTo(item, 800); 
         jQuery(item).addClass('selected');                   
     }
+
+
+	jQuery('.texto a').click(function () {
+        newsscoller2(0);	
+        return false;
+
+    });
+    
+    function paginate2(item) {
+        //jQuery('#mask-gallery').scrollTo(item, 800);     
+        jQuery('#mask-excerpt').scrollTo(item, 800); 
+        jQuery(item).addClass('selected');                   
+    }
 	
 //Mouse over, pause it, on mouse out, resume the slider show
 //    jQuery('#slider').hover(
@@ -114,4 +127,42 @@ function newsscoller(prev) {
     jQuery('#mask-excerpt').scrollTo(next_excerpt, 800);					
 	
 }
+
+//////////
+
+function newsscoller2(prev) {
+    
+    var next_excerpt;
+    //Get the current selected item (with selected class), if none was found, get the first item
+
+    var current_excerpt = jQuery('#excerpt li.selected').length ? jQuery('#excerpt li.selected') : jQuery('#excerpt li:first');
+
+    //if prev is set to 1 (previous item)
+    if (prev) {
+		
+        //Get previous sibling
+
+        next_excerpt = (current_excerpt.prev().length) ? current_excerpt.prev() : jQuery('#excerpt li:last');
+	
+    //if prev is set to 0 (next item)
+    } else {
+		
+        //Get next sibling
+
+        next_excerpt = (current_excerpt.next().length) ? current_excerpt.next() : jQuery('#excerpt li:first');
+    }
+
+    //clear the selected class
+    jQuery('#excerpt li').removeClass('selected');
+	
+    //reassign the selected class to current items
+
+    next_excerpt.addClass('selected');
+
+    //Scroll the items
+
+    jQuery('#mask-excerpt').scrollTo(next_excerpt, 800);					
+	
+}
+
 

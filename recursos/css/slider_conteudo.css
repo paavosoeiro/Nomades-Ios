@@ -151,4 +151,25 @@
     color: #fff;
 }
 
+.texto{
+    margin: 1px;
+	margin-left: 100px;
+    position: relative;
+    float: left;
+    
+    display: block;
+}
 
+/*.conteudo_informativos a,*/
+.texto a{
+    float: left;
+    margin: 0;
+    
+    
+    
+    line-height: 25px;
+    text-decoration: none;
+    display: block;
+	/*margin-left: 200px;*/
+/*    color: #000;*/
+}
