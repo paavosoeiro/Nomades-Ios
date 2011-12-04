@@ -1,0 +1,89 @@
+/* 
+    Document   : barraFixaEstilo
+    Created on : 10/11/2011, 01:55:08
+    Author     : wallace
+    Description:
+    Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+
+
+#barra{
+
+    position: fixed;
+    bottom:0;
+    right: 100px;
+    /*    z-index: 10;*/
+    width: 75%;
+    height: 35px;
+    -moz-border-radius:0px 20px 0px 0px; 
+    border-radius:0px 20px 0px 0px; 
+    -webkit-border-radius:0px 20px 0px 0px; 
+
+    /*    border-right: solid thin #2f8b01;    
+        border-top: solid thin #2f8b01;    */
+
+/*    background-image:  url('/fotoPatrocinio/barra-background.jpg');*/
+    background: #EEE;
+    border-top: solid thin #205606 ;
+    border-right: solid thin #205606;
+
+}
+
+#fotoPatrocinio{
+    font: 100 large black;
+    width: 170px;
+    height: 10px;
+    bottom: 57px;
+    /*    background-color: black;*/
+    float: left;
+}
+
+#slogamApoio{
+    height: 100%;
+    width: 270px;
+    /*border: solid black;*/
+    margin-left: 200px;
+    padding-bottom:5px;
+    /*margin-top: 5px;*/
+}
+
+
+#slogamApoio h1{
+    padding-top: 10px;
+    height: 100%;
+    width: 100%;
+    font-size: 18px;
+    color: brown;
+}
+
+#redesSociais{
+    float: right;
+    position: relative;
+    margin-bottom: 50px;
+    background-color: black;
+    text-align: center;
+    display: block;
+    /*    margin: 5px;*/
+    height: 100%;
+    width: 200px;
+    vertical-align: 20px;
+
+
+}
+
+.imagem{
+    border: solid darkolivegreen thin;
+}
+
+/*.imagemRedesSociais{
+    vertical-align: 10px;
+        display: none;
+    list-style-type: none;    
+}*/
+

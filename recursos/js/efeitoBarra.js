@@ -4,7 +4,7 @@ jQuery(document).ready(function(){
     jQuery("#menu_corpo a").mouseenter(function(){
         jQuery(this).stop().animate({
            "color":"#fff",
-            "background-color":"#435c3f"
+            "background-color":"#205606"
 //                backgroundColor: "yellow"
             
         },700)
