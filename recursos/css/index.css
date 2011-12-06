@@ -15,6 +15,7 @@
 *{
     margin: 0;
     padding: 0;
+    
 }
 
 body{
@@ -22,9 +23,8 @@ body{
     height:100%; 
     background: url('../imagens/bgs/folha_fundo_t.jpg') center center fixed no-repeat;
     background-size:cover; 
-    text-align:center; 
     overflow:auto;
-
+  text-align: left;
     font-family: Tahoma, Geneva, sans-serif;
 }
 
@@ -140,7 +140,7 @@ border-bottom: solid thin #205606;
     min-width: 130px;
     position: relative;
     /*    width: 130px;*/
-   /* color: #701f19;*/
+    color: #701f19;
     white-space: nowrap;
 
     
