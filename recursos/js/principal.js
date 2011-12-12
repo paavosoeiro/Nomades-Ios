@@ -43,12 +43,27 @@ function jsddm_canceltimer()
 document.onclick = jsddm_close;
 
 jQuery(document).ready(function() {
+    jQuery("#loader").hide();
     jQuery("#conteudo").load('home.html');
     jQuery('#galeria').cycle({
         fx:     'zoom', 
         easing: 'easeInBounce', 
         delay:  -4000
     });
+    
+    jQuery(document).ajaxStart(function(){
+      jQuery("#loader").show();
+    }).ajaxStop(function(){
+      jQuery("#loader").hide();
+    });
+    
+    
+    jQuery("#english").live("click", function(e){
+      e.preventDefault();
+      jQuery("[rel*=localize]").localize("recursos/translate/language", { language: "en" });
+    })
+    
+    
     
     jQuery('#menu_corpo > li').bind('mouseover', jsddm_open);
     jQuery('.sub_menu > li').bind('mouseover', jsddm_open_sub);
@@ -58,7 +73,7 @@ jQuery(document).ready(function() {
     });
    
     
-    jQuery('ul#menu_corpo a').click(function(){
+  jQuery('ul#menu_corpo a').click(function(){
         var pagina = jQuery(this).attr('href');
         if(pagina.toString()=='#')return false;
         
@@ -68,7 +83,10 @@ jQuery(document).ready(function() {
             });
         });
         return false;
+        
     });
+    //setTimeout(funcao, 3000);
+    
 });
 
 

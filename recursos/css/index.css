@@ -268,3 +268,14 @@ border-bottom: solid thin #205606;
     margin-right: 20px;
     float: right;
 }
+
+#loader{
+  width: 36px;
+  height: 36px;
+  z-index: 1000;
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  margin-top: -18px;
+  margin-left: -18px;
+}

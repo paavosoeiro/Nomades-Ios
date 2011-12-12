@@ -12,6 +12,7 @@
         <script type="text/javascript" src="recursos/js/jquery.scrollTo.js"></script>
         <script type="text/javascript" src="recursos/js/jquery.cycle.all.js"></script>
         <script type="text/javascript" src="recursos/js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="recursos/js/jquery.localize.js"></script>
         <script type="text/javascript" src="recursos/js/principal.js"></script>
         <script type="text/javascript" src="recursos/js/efeitoBarra.js"></script>
 	<script type="text/javascript" src="recursos/js/barraFixaSlideShow.js"></script>
@@ -37,13 +38,14 @@
     <body>
 <!--        <div id="wrapper">-->
             <div id="tudo">
+            
                 <div id="cima">
                     <div id="topo_todo">
                         <div id="logo">
                             <img src="recursos/imagens/logo_nomades_nova_brilho_350.png"/>
                             <div id="box_utilidades">
                                 <img src="recursos/imagens/topo/portugues.png" width="24" height="24" alt="Idioma Portugues"/>
-                                <img src="recursos/imagens/topo/ingles.png" width="24" height="24" alt="Idioma Ingles"/>
+                                <a id="english" href="#"><img src="recursos/imagens/topo/ingles.png" width="24" height="24" alt="Idioma Ingles"/></a>
                                 <img src="recursos/imagens/topo/espanhol.png" width="24" height="24" alt="Idioma Espanhol"/>
                                 <!--                                <p>-->
 
@@ -81,11 +83,11 @@
                     <div id="menu">
                         <ul id="menu_corpo">
                             <li><a href="home.html">Home</a></li>
-                            <li><a href="#">Trilhas & Rotas</a>
+                            <li><a rel="localize[trilhas-rotas]" href="#">Trilhas & Rotas</a>
                                 <ul class="sub_menu">
-                                    <li><a href="trilhaserotas/circuito-praias.html">Circuito Praias</a></li>
-                                    <li><a href="trilhaserotas/circuito-cachoeiras.html">Circuito das Cachoeiras</a></li>
-                                    <li><a href="trilhaserotas/rota-aldeias.html">Rota das Aldeias</a></li>
+                                    <li><a rel="localize[trilhas.circuito-praias]" href="trilhaserotas/circuito-praias.html">Circuito Praias</a></li>
+                                    <li><a rel="localize[trilhas.circuito-cachoeiras] href="trilhaserotas/circuito-cachoeiras.html">Circuito das Cachoeiras</a></li>
+                                    <li><a rel="localize[trilhas.rota-aldeias] href="trilhaserotas/rota-aldeias.html">Rota das Aldeias</a></li>
                                     <li><a href="#">Circuito Cacau e Chocolate</a></li>
                                     <!--                                    <li><a href="#">Circuito Amado Jorge</a></li>-->
                                     <li><a href="trilhaserotas/circuitos-populares.html">Circuitos Populares</a></li>
@@ -125,8 +127,10 @@
                     </div>
                 </div>
                 <div id="conteudo_todo">
+                  <div id='loader'><img src='recursos/imagens/loader.gif' /></div>
                     <div id="conteudo">
-                    </div>
+                     
+                    </div> 
                     <div id="links">
                         <a href="#"><img src="recursos/imagens/links/ondas.png"/></a>
                         <a href="#"><img src="recursos/imagens/links/mapas.png"/></a>

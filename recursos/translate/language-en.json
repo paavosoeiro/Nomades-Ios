@@ -1,0 +1,9 @@
+{
+  "trilhas-rotas" : "Tracks & Routes",
+  "trilhas": {
+    "circuito-praias" : "Beach Tour",
+    "circuito-cachoeiras" : "Falls Tour",
+    "rota-aldeias" : "Route to the Villages"
+  }
+
+}
