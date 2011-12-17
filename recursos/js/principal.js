@@ -73,7 +73,8 @@ jQuery(document).ready(function() {
     });
    
     
-  jQuery('ul#menu_corpo a').click(function(){
+  jQuery('ul#menu_corpo a').click(function(e){
+        e.preventDefault();
         var pagina = jQuery(this).attr('href');
         if(pagina.toString()=='#')return false;
         
@@ -82,7 +83,7 @@ jQuery(document).ready(function() {
                 jQuery("#conteudo").show('normal');
             });
         });
-        return false;
+        //return false;
         
     });
     //setTimeout(funcao, 3000);
