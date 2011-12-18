@@ -46,8 +46,8 @@ jQuery(document).ready(function() {
     jQuery("#loader").hide();
     jQuery("#conteudo").load('home.html');
     jQuery('#galeria').cycle({
-        fx:     'zoom', 
-        easing: 'easeInBounce', 
+        fx:     'fade', 
+        //easing: 'easeInBounce',
         delay:  -4000
     });
     
